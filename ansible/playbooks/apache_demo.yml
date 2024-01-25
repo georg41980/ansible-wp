@@ -1,0 +1,42 @@
+- name: Apache auf dem Raspberry Pi installieren
+  hosts: all
+  vars:
+    pkgstoinstall: [libffi-dev, libssl-dev, python3, python3-pip]
+  tasks:   
+    - name: Apache2 installieren
+      become: true
+      apt:
+        name: apache2
+        # Aktualisiert zuvor die Paketquellen (entspricht apt update)
+        update_cache: yes
+ 
+    - name: Eigene Index-Seite anlegen
+      become: true
+      copy:
+        dest: /var/www/html/index.html
+        content: "<b>Demo</b>: Apache-Installation per Ansible"
+
+    - name: Docker Compose installieren
+      become: true
+      apt:
+        name: docker-compose
+        # Aktualisiert zuvor die Paketquellen (entspricht apt update)
+        update_cache: yes
+
+    - name: Hole das Docker-Installationsskript
+      shell: curl -fsSL https://get.docker.com -o get-docker.sh
+      args:
+        creates: /home/georg/get-docker.sh
+
+    - name: Führe das Docker-Installationsskript aus
+      shell: sh /home/georg/get-docker.sh
+      args:
+        creates: /usr/bin/docker
+
+    - name: Füge dem Benutzer "georg" die Berechtigung hinzu, Docker-Befehle auszuführen
+      become: true
+      shell: usermod -aG docker georg 
+
+
+ 
+   
