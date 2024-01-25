@@ -6,7 +6,7 @@
     - name: Apache2 installieren
       become: true
       apt:
-        name: apache2
+        name: nginx
         # Aktualisiert zuvor die Paketquellen (entspricht apt update)
         update_cache: yes
  

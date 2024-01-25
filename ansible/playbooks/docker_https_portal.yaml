@@ -1,0 +1,19 @@
+- hosts: "all"
+  tasks:
+    - name: "Erzeuge Proxynet"
+      docker_container:
+        name: "https_portal"
+        image: "steveltn/https-portal:1.23"
+        restart_policy: "unless-stopped"
+        restart: "yes"
+        networks:
+          - name: "bridge"
+          - name: "proxynet"
+        ports:
+          - "80:80"
+          - "443:443"
+        env:
+         STAGE: "production"
+        volumes:
+          - "/home/docker/data/https_portal/data:/var/lib/https-portal"
+          - "/home/docker/data/https_portal/log:/var/log/nginx"
