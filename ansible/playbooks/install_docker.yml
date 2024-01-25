@@ -1,0 +1,31 @@
+- hosts: "all"
+  tasks:
+
+    - name: "Pip3 installieren"
+      apt:
+        name: "python3-pip"
+        # Aktualisiert zuvor die Paketquellen (entspricht apt update)
+        update_cache: yes
+    
+    - name: "Docker-Compose installieren"
+      apt:
+        name: "docker-compose"
+
+    - name: Hole das Docker-Installationsskript
+      shell: curl -fsSL https://get.docker.com -o get-docker.sh
+      args:
+        creates: /home/georg/get-docker.sh
+
+    - name: Führe das Docker-Installationsskript aus
+      shell: sh /home/georg/get-docker.sh
+      args:
+        creates: /usr/bin/docker
+
+    - name: Füge dem Benutzer "georg" die Berechtigung hinzu, Docker-Befehle
+        auszuführen
+      become: true
+      shell: usermod -aG docker georg
+
+    - name: Pip3 installieren
+      apt:
+        name: python3-pip
