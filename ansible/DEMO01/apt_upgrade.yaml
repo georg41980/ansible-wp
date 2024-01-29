@@ -1,0 +1,17 @@
+- hosts: "all"
+  tasks:
+
+    - name: "apt update"
+      become: true
+      apt:
+        update_cache: "yes"
+
+    - name: "apt upgrade"
+      become: true
+      apt:
+        upgrade: "safe"
+
+    - name: "apt autoclean"
+      become: true
+      apt:
+        autoclean: "yes"

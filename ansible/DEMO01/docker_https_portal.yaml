@@ -1,0 +1,38 @@
+- hosts: "all"
+  become: true
+  tasks:
+
+    - name: "Init HTTPS-Portal"
+      docker_container:
+        name: "https_portal"
+        image: "steveltn/https-portal:1.21"
+        log_driver: "journald"
+        log_options:
+          tag: "{{ '{{.Name}} ' }}"
+        restart_policy: "unless-stopped"
+        restart: "yes"
+        networks:
+          - name: "bridge"
+          - name: "proxynet"
+        ports:
+          - "80:80"
+          - "443:443"
+        env:
+          TZ: "Europe/Vienna"
+          STAGE: "production"
+          WORKER_CONNECTIONS: "4096"
+          RESOLVER: "127.0.0.11 ipv6=off valid=30s"
+          DYNAMIC_UPSTREAM: "true"
+          CLIENT_MAX_BODY_SIZE: "1000M"
+          WEBSOCKET: "true"
+          HSTS_MAX_AGE: "31536000"
+          DOMAINS: >
+            p.pidahmen.duckdns.org -> portainer:9000,
+            ghost.pidahmen.duckdns.org -> ghost:2368,
+            pihole.pidahmen.duckdns.org -> pihole:2000,
+            wordpress.pidahmen.duckdns.org -> wordpress:80,
+        volumes:
+          - "/etc/timezone:/etc/timezone:ro"
+          - "/etc/localtime:/etc/localtime:ro"
+          - "/home/docker/data/https_portal/data:/var/lib/https-portal"
+          - "/home/docker/data/https_portal/log:/var/log/nginx"

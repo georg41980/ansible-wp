@@ -1,0 +1,24 @@
+- hosts: "all"
+  tasks:
+
+    - name: "Init Portainer"
+      docker_container:
+        name: "portainer"
+        image: "portainer/portainer-ce"
+        log_driver: "journald"
+        log_options:
+          tag: "{{ '{{.Name}} ' }}"
+        restart_policy: "unless-stopped"
+        restart: "yes"
+        networks:
+          - name: "proxynet"
+            aliases:
+              - "portainer"
+          - name: "bridge"
+        env:
+          TZ: "Europe/Vienna"
+        volumes:
+          - "/etc/timezone:/etc/timezone:ro"
+          - "/etc/localtime:/etc/localtime:ro"
+          - "/var/run/docker.sock:/var/run/docker.sock"
+          - "/home/docker/data/portainer/data:/data"

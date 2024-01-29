@@ -1,0 +1,34 @@
+- hosts: "all"
+  become: true
+  tasks:
+
+    - name: "Erzeuge Ghost"
+      docker_compose:
+        project_name: "ghost"
+        restarted: "yes"
+        pull: "yes"
+
+        definition:
+
+          networks:
+            default:
+            proxynet:
+              external: true
+
+          services:
+            ghost:
+              image: "arm64v8/ghost"
+              restart: "unless-stopped"
+              environment:
+                NODE_ENV: "development"
+                url: "http://localhost:3001"
+              ports:
+                - "3001:2368"
+              networks:
+                default:
+                proxynet:
+                  aliases:
+                    - ghost
+              volumes:
+                - "/home/docker/data/ghost/content:/var/lib/ghost/content"
+

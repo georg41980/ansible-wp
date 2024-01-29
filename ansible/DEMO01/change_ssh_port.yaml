@@ -1,0 +1,14 @@
+- hosts: "all"
+  become: true
+  tasks:
+
+    - name: "SSH-Port ändern"
+      lineinfile:
+        dest: "/etc/ssh/sshd_config"
+        regexp: "Port 22"
+        line: "Port 15684"
+
+    - name: "SSHD neu starten"
+      service:
+        name: "sshd"
+        state: "restarted"

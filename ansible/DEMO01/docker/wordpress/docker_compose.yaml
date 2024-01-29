@@ -1,0 +1,37 @@
+networks:
+  default:
+  proxynet:
+    external: true
+
+services:
+
+  mariadb:
+    image: "mariadb:10.8"
+    restart: "unless-stopped"
+    environment:
+      MARIADB_ROOT_PASSWORD: "Zckwoch12L290sh"
+      MARIADB_DATABASE: "wordpress"
+      MARIADB_USER: "wordpress"
+      MARIADB_PASSWORD: "Kchwocmwh128dsLm"
+    networks:
+      default:
+    volumes:
+      - "/home/docker/data/wordpress/mariadb/mysql:/var/lib/mysql"
+
+  wordpress:
+    image: "wordpress:6-apache"
+    restart: "unless-stopped"
+    depends_on:
+      - mariadb
+    environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: Kchwocmwh128dsLm
+    networks:
+      default:
+      proxynet:
+        aliases:
+          - wordpress
+    volumes:
+      - "/home/docker/data/wordpress/wordpress/html:/var/www/html"

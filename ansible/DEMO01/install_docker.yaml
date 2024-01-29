@@ -1,0 +1,18 @@
+- hosts: "all"
+  become: true
+  tasks:
+
+    - name: "Pip3 installieren"
+      apt:
+        name: "python3-pip"
+
+    - name: "Docker-Compose installieren"
+      apt:
+        name: "docker-compose"
+
+    - name: "Docker.io installieren"
+      apt:
+        name: "docker.io"
+
+    - name: "Docker-CE installieren"
+      shell: "curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh"
