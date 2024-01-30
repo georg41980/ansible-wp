@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  stirling-pdf:
+    container_name: Stirling-PDF
+    image: frooodle/s-pdf
+    security_opt:
+      - "no-new-privileges:true"  # Geändert, um den Wert als String zu setzen
+    ports:
+      - 7890:8080
+    volumes:
+      - "/home/georg/data/stirling/data:/usr/share/tesseract-ocr/4.00/tessdata:rw"
+      - "/home/georg/data/stirling/config:/configs:rw"
+      - "/home/georg/data/stirling/customFiles:/customFiles:rw"
+      - "/home/georg/data/stirling/logs:/logs:rw"
+    environment:
+      DOCKER_ENABLE_SECURITY: "true"  # Geändert, um den Wert als String zu setzen
+      UI_APPNAME: "StirlingPDF"
+      UI_APPNAMENAVBAR: "Stirling PDF"
+      SYSTEM_MAXFILESIZE: "5000"  # Geändert, um den Wert als String zu setzen
+      METRICS_ENABLED: "true"
+      SYSTEM_GOOGLEVISIBILITY: "false"  # Geändert, um den Wert als String zu setzen
+    restart: on-failure:5

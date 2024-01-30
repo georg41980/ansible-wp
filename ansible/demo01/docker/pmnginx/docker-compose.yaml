@@ -1,12 +1,24 @@
 version: '3.8'
+
 services:
-  app:
-    image: 'jc21/nginx-proxy-manager:latest'
+  nginx:
+    container_name: nginx
+    hostname: nginx
+    image: jc21/nginx-proxy-manager:latest
     restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - bridge
     ports:
-      - '80:80'
-      - '81:81'
-      - '443:443'
+      - "80:80"
+      - "81:81"
+      - "443:443"
     volumes:
-      - ./data:/data
-      - ./letsencrypt:/etc/letsencrypt
+      - "/home/georg/data/pmnginx/data:/data"
+      - "/home/georg/data/pmnginx/cert:/etc/letsencrypt"
+    environment:
+      TZ: Europe/Berlin
+    
+networks:
+  bridge:

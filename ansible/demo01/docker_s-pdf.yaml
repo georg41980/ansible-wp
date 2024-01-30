@@ -2,7 +2,7 @@
   become: true
 
   vars:
-    PROJECT_DIR: "/home/docker/projects/uptime/"
+    PROJECT_DIR: "/home/docker/projects/s-pdf/"
 
   tasks:
 
@@ -13,10 +13,10 @@
 
     - name: "Copy Project Directory"
       copy:
-        src: "./docker/uptime/"  # Stellen Sie sicher, dass der Quellpfad korrekt ist
+        src: "./docker/s-pdf/"  # Stellen Sie sicher, dass der Quellpfad korrekt ist
         dest: "{{ PROJECT_DIR }}"   # Setzen Sie den Zielordner entsprechend Ihrer Konfiguration
 
-    - name: "Init uptime"
+    - name: "Init s-pdf"
       docker_compose:
         project_src: "{{ PROJECT_DIR }}"  # Setzen Sie den Pfad zum Docker-Compose-File
         restarted: "yes"
