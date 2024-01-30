@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
   nginx:
-    container_name: nginx
-    hostname: nginx
+    container_name: pmnginx
+    hostname: pmnginx
     image: jc21/nginx-proxy-manager:latest
     restart: unless-stopped
     security_opt:
@@ -15,8 +15,8 @@ services:
       - "81:81"
       - "443:443"
     volumes:
-      - "/home/georg/data/pmnginx/data:/data"
-      - "/home/georg/data/pmnginx/cert:/etc/letsencrypt"
+      - "/home/georg/data/pmnginx/data:/data:rw"
+      - "/home/georg/data/pmnginx/cert:/etc/letsencrypt:rw"
     environment:
       TZ: Europe/Berlin
     
