@@ -15,8 +15,8 @@ services:
       - "81:81"
       - "443:443"
     volumes:
-      - "/home/georg/data/pmnginx/data:/data:rw"
-      - "/home/georg/data/pmnginx/cert:/etc/letsencrypt:rw"
+      - "/home/georg/data/pmnginx/data:/data"
+      - "/home/georg/data/pmnginx/cert:/etc/letsencrypt"
     environment:
       TZ: Europe/Berlin
     
