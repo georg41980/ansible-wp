@@ -21,3 +21,5 @@
         project_src: "{{ PROJECT_DIR }}"  # Setzen Sie den Pfad zum Docker-Compose-File
         restarted: "yes"
         pull: "yes"
+#
+
