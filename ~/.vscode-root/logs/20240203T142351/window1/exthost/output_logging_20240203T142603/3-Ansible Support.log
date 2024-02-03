@@ -20,3 +20,12 @@ TypeError: Cannot read properties of undefined (reading 'has')
     at Generator.next (<anonymous>)
     at s (/home/georg/.vscode/extensions/redhat.ansible-2.10.130/out/server/src/server.js:2:21924)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
