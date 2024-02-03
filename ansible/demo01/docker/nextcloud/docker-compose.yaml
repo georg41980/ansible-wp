@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  nextcloud:
+    image: nextcloud:28.0.2
+    container_name: nextcloud
+    restart: unless-stopped
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /home/georg/data/nextcloud/app:/var/www/html
+    environment:
+      - NEXTCLOUD_ADMIN_USER=Georg
+      - NEXTCLOUD_ADMIN_PASSWORD=5S6tMfXeJGP#*zhteYreEg#e1nUw1mNRqEcGpFQE
+      - NEXTCLOUD_DATA_DIR=/var/www/html/data
+      - NEXTCLOUD_TRUSTED_DOMAINS=192.168.1.102:8080
+      - NEXTCLOUD_DB_TYPE=sqlite  # Hier wird SQLite als Datenbanktyp festgelegt
+    ports:
+      - "192.168.1.102:8080:80"  # Hier wird der Port 8080 des Hosts auf Port 80 des Containers weitergeleitet

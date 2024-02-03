@@ -1,0 +1,67 @@
+- hosts: "all"
+  become: true
+
+  vars:
+    PROJECT_DIR: "/home/docker/projects/paperless-ngx/"
+
+  tasks:
+
+    - name: Führe das Docker-Installationsskript aus
+      shell: mkdir -p /home/georg/data/paperless-ngx
+
+    - name: Führe das Docker-Installationsskript aus
+      shell: mkdir -p /home/georg/data/paperless-ngx/redisdata
+
+    - name: Führe das Docker-Installationsskript aus
+      shell: mkdir -p /home/georg/data/paperless-ngx/data
+
+    - name: Führe das Docker-Installationsskript aus
+      shell: mkdir -p /home/georg/data/paperless-ngx/media
+
+    - name: Führe das Docker-Installationsskript aus
+      shell: mkdir -p /home/georg/data/paperless-ngx/export/
+
+    - name: Führe das Docker-Installationsskript aus
+      shell: mkdir -p /home/georg/data/paperless-ngx/consume/
+
+    - name: "Delete Old Project Directory"
+      file:
+        state: "absent"
+        path: "{{ PROJECT_DIR }}"  # Setzen Sie den Pfad hier entsprechend Ihrer Konfiguration
+
+    - name: "Copy Project Directory"
+      copy:
+        src: "./docker/paperless-ngx/"  # Stellen Sie sicher, dass der Quellpfad korrekt ist
+        dest: "{{ PROJECT_DIR }}"   # Setzen Sie den Zielordner entsprechend Ihrer Konfiguration
+
+    - name: "Init paperless-ngx"
+      docker_compose:
+        project_src: "{{ PROJECT_DIR }}"  # Setzen Sie den Pfad zum Docker-Compose-File
+        restarted: "yes"
+        pull: "yes"
+
+    - name: "proftpd-basic installieren"
+      apt:
+        name: "proftpd-basic"
+
+    - name: Benutzer anlegen und Berechtigung setzten
+      shell: echo "<Global>/    RequireValidShell off/</Global>/# If desired turn off IPv6/UseIPv6 off/# Default directory is ftpusers home/DefaultRoot ~ ftpuser/# Limit login to the ftpuser group/<Limit LOGIN>/    DenyGroup !ftpuser/</Limit>" > /etc/proftpd/conf.d/ftp.conf
+
+    - name: Benutzer anlegen und Berechtigung setzten
+      shell: systemctl restart proftpd
+
+    - name: Benutzer anlegen und Berechtigung setzten
+      command: groupadd ftpuser
+      args:
+        creates: /usr/bin/ftpuser
+      ignore_errors: yes
+
+    - name: Benutzer anlegen und Berechtigung setzten
+      command: groupadd ftpuser
+      args:
+        creates: /usr/bin/ftpuser
+      ignore_errors: yes
+
+    - name: "filezilla installieren"
+      apt:
+        name: "filezilla"
