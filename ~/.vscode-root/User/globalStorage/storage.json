@@ -118,7 +118,8 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "A&&lles speichern"
+                        "label": "A&&lles speichern",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -764,8 +765,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Zeilenumbruch",
-                        "enabled": false
+                        "label": "&&Zeilenumbruch"
                     }
                 ]
             },

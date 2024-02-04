@@ -1,0 +1,28 @@
+2024-02-04 09:39:38.071 [info] Protokolliergrad: Info
+2024-02-04 09:39:38.071 [info] Gefundenes Git wird überprüft in: "git"
+2024-02-04 09:39:38.071 [info] Git "2.39.2" von "git" verwenden
+2024-02-04 09:39:38.082 [info] > git rev-parse --show-toplevel [20ms]
+2024-02-04 09:39:38.108 [info] > git rev-parse --git-dir --git-common-dir [8ms]
+2024-02-04 09:39:38.164 [info] Open repository: /home/georg/ansible-wp
+2024-02-04 09:39:38.205 [info] > git config --get commit.template [20ms]
+2024-02-04 09:39:38.229 [info] > git rev-parse --show-toplevel [28ms]
+2024-02-04 09:39:38.247 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [24ms]
+2024-02-04 09:39:38.269 [info] > git rev-parse --show-toplevel [23ms]
+2024-02-04 09:39:38.300 [info] > git status -z -uall [36ms]
+2024-02-04 09:39:38.403 [info] > git config --get commit.template [25ms]
+2024-02-04 09:39:38.447 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [46ms]
+2024-02-04 09:39:38.519 [info] > git status -z -uall [32ms]
+2024-02-04 09:39:38.840 [info] > git show --textconv HEAD:ansible/demo01/docker_nextcloud.yaml [44ms]
+2024-02-04 09:39:38.864 [info] > git ls-tree -l HEAD -- /home/georg/ansible-wp/ansible/demo01/docker_nextcloud.yaml [29ms]
+2024-02-04 09:39:39.819 [info] > git check-ignore -v -z --stdin [22ms]
+2024-02-04 09:39:40.457 [info] > git ls-tree -l HEAD -- /home/georg/ansible-wp/ansible/demo01/docker_nextcloud.yaml [49ms]
+2024-02-04 09:39:41.062 [info] > git check-ignore -v -z --stdin [11ms]
+2024-02-04 09:39:41.498 [info] > git merge-base refs/heads/main refs/remotes/origin/main [233ms]
+2024-02-04 09:39:41.572 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [37ms]
+2024-02-04 09:39:42.835 [info] > git config --get commit.template [13ms]
+2024-02-04 09:39:42.840 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2024-02-04 09:39:42.885 [info] > git status -z -uall [22ms]
+2024-02-04 09:39:43.956 [info] > git check-ignore -v -z --stdin [1ms]
+2024-02-04 09:39:50.607 [info] > git config --get commit.template [3ms]
+2024-02-04 09:39:50.620 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-02-04 09:39:50.649 [info] > git status -z -uall [17ms]

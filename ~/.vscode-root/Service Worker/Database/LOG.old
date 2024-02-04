@@ -1,2 +1,3 @@
-2024/02/03-14:23:56.157 149a1 Creating DB /home/georg/ansible-wp/~/.vscode-root/Service Worker/Database since it was missing.
-2024/02/03-14:23:56.166 149a1 Reusing MANIFEST /home/georg/ansible-wp/~/.vscode-root/Service Worker/Database/MANIFEST-000001
+2024/02/04-09:36:46.272 25f7f Reusing MANIFEST /home/georg/ansible-wp/~/.vscode-root/Service Worker/Database/MANIFEST-000001
+2024/02/04-09:36:46.272 25f7f Recovering log #3
+2024/02/04-09:36:46.272 25f7f Reusing old log /home/georg/ansible-wp/~/.vscode-root/Service Worker/Database/000003.log 
