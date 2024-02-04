@@ -1,0 +1,74 @@
+- hosts: "all"
+  become: true
+
+  vars:
+    PROJECT_DIR: "/home/docker/projects/paperless-ngx/"
+
+  tasks:
+
+    - name: "filezilla installieren"
+      apt:
+        name: "filezilla"
+
+    - name: "proftpd-basic installieren"
+      apt:
+        name: "proftpd-basic"
+
+    - name: "konfig proftpd"
+      shell: echo -e "<Global>    RequireValidShell off</Global>\n# If desired turn off IPv6\nUseIPv6 off\n# Default directory is ftpusers home\nDefaultRoot ~ ftpuser\n# Limit login to the ftpuser group\n<Limit LOGIN>    DenyGroup !ftpuser</Limit>" > /etc/proftpd/conf.d/ftp.conf
+
+    - name: "restart proftpd"
+      shell: systemctl restart proftpd
+
+    - name: "add ftpuser group if it does not exist"
+      ansible.builtin.group:
+        name: ftpuser
+        state: present
+      ignore_errors: yes
+
+    - name: "Überprüfe, ob das Zertifikat bereits existiert"
+      stat:
+        path: /etc/ssl/certs/proftpd.crt
+      register: cert_stat
+
+    - name: "Erzeuge Zertifikat, wenn es nicht existiert"
+      shell: " openssl req -x509 -newkey rsa:2048 -keyout /etc/ssl/private/proftpd.key -out /etc/ssl/certs/proftpd.crt -nodes -days 3660"
+      when: cert_stat.stat.exists
+
+    - name: "restart proftpd"
+      shell: echo -e "<IfModule mod_tls.c>\n    TLSEngine on\n    TLSLog /var/log/proftpd/tls.log\n    TLSProtocol TLSv1.2\n    TLSRSACertificateFile /etc/ssl/certs/proftpd.crt\n    TLSRSACertificateKeyFile /etc/ssl/private/proftpd.key\n    TLSVerifyClient off\n    TLSOptions NoSessionReuseRequired\n    TLSRequired on\n</IfModule>" > /etc/proftpd/conf.d/tls.conf
+
+    - name: "userrechte auf paperless ausweiten"
+      shell: usermod -aG ftpuser paperless
+
+    - name: "Erstelle für paperless-ngx redisdata Ordner"
+      shell: mkdir -p /home/georg/data/paperless-ngx/redisdata
+
+    - name: Erstelle für paperless-ngx data Ordner
+      shell: mkdir -p /home/georg/data/paperless-ngx/data
+
+    - name: Erstelle für paperless-ngx media Ordner
+      shell: mkdir -p /home/georg/data/paperless-ngx/media
+
+    - name: Erstelle für paperless-ngx export Ordner
+      shell: mkdir -p /home/paperless/export
+
+    - name: Erstelle für paperless-ngx consume Ordner
+      shell: mkdir -p /home/paperless/consume
+
+    - name: "Delete Old Project Directory"
+      file:
+        state: "absent"
+        path: "{{ PROJECT_DIR }}"  # Setzen Sie den Pfad hier entsprechend Ihrer Konfiguration
+
+    - name: "Copy Project Directory"
+      copy:
+        src: "./docker/paperless-ngx/"  # Stellen Sie sicher, dass der Quellpfad korrekt ist
+        dest: "{{ PROJECT_DIR }}"   # Setzen Sie den Zielordner entsprechend Ihrer Konfiguration
+
+    - name: "Init paperless-ngx"
+      docker_compose:
+        project_src: "{{ PROJECT_DIR }}"  # Setzen Sie den Pfad zum Docker-Compose-File
+        restarted: "yes"
+        pull: "yes"
+#

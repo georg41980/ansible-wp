@@ -1,0 +1,7 @@
+2024-02-03 17:47:43.223 [warning] Webgl could not be loaded. Falling back to the canvas renderer type. [{}]
+2024-02-03 17:47:43.228 [warning] Webgl could not be loaded. Falling back to the canvas renderer type. [{}]
+2024-02-03 17:49:31.430 [info] Latency measurements for local backend
+window<->ptyhost (message port): 1.60ms
+window<->ptyhostservice<->ptyhost: 9.60ms
+ptyhostservice<->ptyhost: 1.93ms []
+2024-02-03 17:51:59.383 [warning] Webgl could not be loaded. Falling back to the canvas renderer type. [{}]
