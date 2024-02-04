@@ -1,0 +1,124 @@
+e
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	renamed:    ansible/.gitignore -> .gitignore
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/013407aed17afd54_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/045c41e40dedc5e8_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/0b5be4f49ce1690a_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/156edee98b5f213b_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/159089d5750defba_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/15faecd37ab2eefc_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/1984e4004beee08c_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/1a31e9787d1facb1_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/1b808651073f6171_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/1f6ae5ce119f8686_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/284484cef27db694_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/29176e34c842a33e_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/2c91d1adf356060a_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/2d9d1980da6feb06_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/2eb8f424caa1037f_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/44d53ea01c76bf60_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/4e1dbb18753e5955_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/500750c94c6fc2f1_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/52079aa2e9d85994_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/52e961dda1e60268_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/54e007b24c1c1ade_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/552aeed681c57116_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/566105fe6faa47de_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/56f05dd7611763bf_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/5c2d8be01a1c2560_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/5c6a43e2c7f20d63_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/5f68bfa4f7aadb56_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/620a6ddb8f46f58c_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/650b2ef1e042a749_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/6784599e4c0f347e_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/67ac2908ba2ac40f_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/684f1c9c9d3e5817_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/69d837dde69245b2_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/6e9bfb1d9f05b7ee_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/7176208182409229_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/747faed79303a752_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/7e0d145bfb1bb660_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/80cb2405972d9a3d_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/815b2163f8ed5645_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/8259861f8a692e8a_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/838bb30a62bf5e36_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/899f0e244fd9fd50_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/8ada0987c5105aaa_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/8eedf3e10fc8aaf7_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/9141d3abf12f93c7_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/979f52a3855a0d65_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/9841b19247f74be9_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/98f6f312e55ef3d5_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/9a78969278b6411a_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/9bd90553ee59f6a1_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/9eb1a710d6c0595e_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/9ed58e1d5cab85d6_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/a13a690dffdfa5b2_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/a17e06fed7a33b0d_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/a1c87a2c7efc745c_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/a6cab2d105aefdc5_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/a8898cd33affb241_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/a893f5a5d08e8687_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/abf6617a373d65c2_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/af2feaf012a0f47e_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/b05af3152170ab96_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/b574ef4466bd18fe_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/b5ae22c42906bd2f_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/b9082dcd01be9cf6_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/bb918749ca78bbda_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/bc78aa9decb8cd90_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/bd69a5c493eebc1e_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/c06206cf3f2196a4_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/c374b74562484f64_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/c4cdba731d7d5f36_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/c5e7752dee54197e_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/c6a617c8f2978a06_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/cb81f47515bec8ef_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/ccf3e56ea0341548_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/ce28c9eb4a5936d4_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/d7f1e7fec6a9c7ea_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/d8e8183a1453dc6b_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/dd4a50c29d4ee4b0_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/e468cf2295eac6c4_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/e8cf8ae6ea926dde_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/ee5d9b8029d3fbc4_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/f8004d3a2918a146_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/f806d837f7721345_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/fcd94338f8a064d3_0
+#	modified:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/index-dir/the-real-index
+#	new file:   ansible/demo01/~/.vscode-root/CachedData/8b3775030ed1a69b13e4f4c628c612102e30a681/eventEmitter2-e35711d5cd798650ed4a51689d6dbd91.code
+#	new file:   ansible/demo01/~/.vscode-root/CachedData/8b3775030ed1a69b13e4f4c628c612102e30a681/index-a73971e8d4c3add4339d542f362d9a9a.code
+#	new file:   ansible/demo01/~/.vscode-root/CachedData/8b3775030ed1a69b13e4f4c628c612102e30a681/terminal-c616caf43c1340b5f90907e69f80c088.code
+#	new file:   ansible/demo01/~/.vscode-root/CachedData/8b3775030ed1a69b13e4f4c628c612102e30a681/unixTerminal-c3755bf09d6a2081e5471ef8d8437297.code
+#	new file:   ansible/demo01/~/.vscode-root/CachedData/8b3775030ed1a69b13e4f4c628c612102e30a681/utils-ab27971de8723716f0986760d0a7ec32.code
+#	new file:   ansible/demo01/~/.vscode-root/Crashpad/completed/32b6f194-5ce0-4830-9c10-13c70291075c.dmp
+#	new file:   ansible/demo01/~/.vscode-root/Crashpad/completed/32b6f194-5ce0-4830-9c10-13c70291075c.meta
+#	modified:   ansible/demo01/~/.vscode-root/Crashpad/settings.dat
+#	modified:   ansible/demo01/~/.vscode-root/DawnCache/data_1
+#	modified:   ansible/demo01/~/.vscode-root/GPUCache/data_0
+#	modified:   ansible/demo01/~/.vscode-root/GPUCache/data_1
+#	modified:   ansible/demo01/~/.vscode-root/GPUCache/data_2
+#	modified:   ansible/demo01/~/.vscode-root/GPUCache/index
+#	modified:   ansible/demo01/~/.vscode-root/Network Persistent State
+#	modified:   ansible/demo01/~/.vscode-root/TransportSecurity
+#	new file:   ansible/demo01/~/.vscode-root/User/History/-22efc308/H5Jj
+#	modified:   ansible/demo01/~/.vscode-root/User/History/-22efc308/entries.json
+#	modified:   ansible/demo01/~/.vscode-root/User/globalStorage/state.vscdb
+#	modified:   ansible/demo01/~/.vscode-root/User/globalStorage/storage.json
+#	modified:   ansible/demo01/~/.vscode-root/User/workspaceStorage/def77d5efa0eaf92df08b5f1d79fca17/state.vscdb
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/exthost.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/ms-vscode-remote.remote-containers/remoteContainers-2024-02-04T08-18-11.328Z.log
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/output_logging_20240204T091808/3-Ansible Support.log
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/vscode.git/Git.log
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/views.log
+#
+# Changes not staged for commit:
+#	modified:   ansible/demo01/~/.vscode-root/User/globalStorage/state.vscdb
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/vscode.git/Git.log
+#
