@@ -104,3 +104,42 @@ cmd 'ansible-lint --version' was not executed with the following error: ' Error:
 cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
 /bin/sh: 1: ansible-lint: not found
 
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+

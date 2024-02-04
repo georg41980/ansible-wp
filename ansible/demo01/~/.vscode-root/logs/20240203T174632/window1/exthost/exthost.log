@@ -10214,3 +10214,7 @@
 2024-02-04 08:51:50.295 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
 2024-02-04 08:51:51.823 [warning] [Decorations] CAPPING events from decorations provider vscode.git 484
 2024-02-04 08:51:56.877 [warning] [Decorations] CAPPING events from decorations provider vscode.git 484
+2024-02-04 08:52:05.931 [warning] [Decorations] CAPPING events from decorations provider vscode.git 484
+2024-02-04 08:54:28.136 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-02-04 08:54:28.242 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-02-04 08:54:28.810 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
