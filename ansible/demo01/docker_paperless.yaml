@@ -14,8 +14,21 @@
       apt:
         name: "proftpd-basic"
 
-    - name: "konfig proftpd"
-      shell: echo -e "<Global>    RequireValidShell off</Global>\n# If desired turn off IPv6\nUseIPv6 off\n# Default directory is ftpusers home\nDefaultRoot ~ ftpuser\n# Limit login to the ftpuser group\n<Limit LOGIN>    DenyGroup !ftpuser</Limit>" > /etc/proftpd/conf.d/ftp.conf
+    - name: Erstelle und fülle eine Datei
+      ansible.builtin.copy:
+        content: |
+          <Global>
+            RequireValidShell off
+          </Global>
+          # If desired turn off IPv6
+          UseIPv6 off
+          # Default directory is ftpusers home
+          # DefaultRoot ~ ftpuser
+          # Limit login to the ftpuser group
+          <Limit LOGIN>
+            DenyGroup !ftpuser
+          </Limit>
+        dest: /etc/proftpd/conf.d/ftp.conf
 
     - name: "restart proftpd"
       shell: systemctl restart proftpd
@@ -25,18 +38,6 @@
         name: ftpuser
         state: present
       ignore_errors: yes
-
-    - name: "Überprüfe, ob das Zertifikat bereits existiert"
-      stat:
-        path: /etc/ssl/certs/proftpd.crt
-      register: cert_stat
-
-    - name: "Erzeuge Zertifikat, wenn es nicht existiert"
-      shell: " openssl req -x509 -newkey rsa:2048 -keyout /etc/ssl/private/proftpd.key -out /etc/ssl/certs/proftpd.crt -nodes -days 3660"
-      when: cert_stat.stat.exists
-
-    - name: "konfig proftpd erstellen"
-      shell: echo -e "<IfModule mod_tls.c>\n    TLSEngine on\n    TLSLog /var/log/proftpd/tls.log\n    TLSProtocol TLSv1.2\n    TLSRSACertificateFile /etc/ssl/certs/proftpd.crt\n    TLSRSACertificateKeyFile /etc/ssl/private/proftpd.key\n    TLSVerifyClient off\n    TLSOptions NoSessionReuseRequired\n    TLSRequired on\n</IfModule>" > /etc/proftpd/conf.d/tls.conf
 
     - name: "userrechte auf paperless ausweiten"
       shell: usermod -aG ftpuser paperless
