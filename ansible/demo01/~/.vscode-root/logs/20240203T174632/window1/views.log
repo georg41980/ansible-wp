@@ -35,3 +35,4 @@
 2024-02-03 17:49:14.983 [info] Added views:dockerComposeProjects,dockerComposeServices in workbench.view.extension.dockerComposeView
 2024-02-03 17:49:14.988 [info] Added views:ansible-creator,lightspeed-explorer-treeview,lightspeed-feedback-webview in workbench.view.extension.ansible-explorer
 2024-02-03 17:49:29.916 [info] Added views:workbench.view.testing in workbench.view.extension.test
+2024-02-04 09:07:00.799 [info] Removed views:workbench.view.testing from workbench.view.extension.test

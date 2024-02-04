@@ -1,0 +1,22 @@
+2024-02-04 09:07:11.182 [info] Experiment 'pythonRecommendTensorboardExt' ist aktiv
+2024-02-04 09:07:11.183 [info] Experiment 'pythonREPLSmartSend' ist aktiv
+2024-02-04 09:07:11.183 [info] Experiment 'pythonTerminalEnvVarActivation' ist aktiv
+2024-02-04 09:07:11.183 [info] Experiment 'pythonTestAdapter' ist aktiv
+2024-02-04 09:07:11.296 [info] Default formatter is set to null for workspace /home/georg/ansible-wp
+2024-02-04 09:07:11.354 [info] Test server listening.
+2024-02-04 09:07:11.355 [info] Pfad zum Python-Interpreter: /bin/python
+2024-02-04 09:07:11.933 [info] Send text to terminal: echo /usr/bin/bash
+2024-02-04 09:07:14.987 [info] Shell integration is not working for bash
+2024-02-04 09:07:14.989 [warning] Shell integration is not active, environment activated maybe overriden by the shell.
+2024-02-04 09:07:16.717 [info] Starten des Pylance-Sprachservers.
+2024-02-04 09:18:37.000 [info] Experiment 'pythonRecommendTensorboardExt' ist aktiv
+2024-02-04 09:18:37.000 [info] Experiment 'pythonREPLSmartSend' ist aktiv
+2024-02-04 09:18:37.000 [info] Experiment 'pythonTerminalEnvVarActivation' ist aktiv
+2024-02-04 09:18:37.001 [info] Experiment 'pythonTestAdapter' ist aktiv
+2024-02-04 09:18:37.172 [info] Default formatter is set to null for workspace /home/georg/ansible-wp
+2024-02-04 09:18:37.207 [info] Test server listening.
+2024-02-04 09:18:37.209 [info] Pfad zum Python-Interpreter: /bin/python
+2024-02-04 09:18:37.654 [info] Send text to terminal: echo /usr/bin/bash
+2024-02-04 09:18:40.343 [info] Starten des Pylance-Sprachservers.
+2024-02-04 09:18:40.654 [info] Shell integration is not working for bash
+2024-02-04 09:18:40.656 [warning] Shell integration is not active, environment activated maybe overriden by the shell.
