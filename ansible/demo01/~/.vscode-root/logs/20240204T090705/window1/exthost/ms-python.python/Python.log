@@ -20,3 +20,4 @@
 2024-02-04 09:18:40.343 [info] Starten des Pylance-Sprachservers.
 2024-02-04 09:18:40.654 [info] Shell integration is not working for bash
 2024-02-04 09:18:40.656 [warning] Shell integration is not active, environment activated maybe overriden by the shell.
+2024-02-04 09:31:11.152 [info] Discover tests for workspace name: undefined - uri: /home/georg/ansible-wp/ansible/demo01/~/.vscode-root/User/settings.json

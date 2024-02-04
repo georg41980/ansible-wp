@@ -1,0 +1,45 @@
+Error: Command failed: command -v ansible-lint
+
+    at ChildProcess.exithandler (node:child_process:431:12)
+    at ChildProcess.emit (node:events:513:28)
+    at maybeClose (node:internal/child_process:1091:16)
+    at Socket.<anonymous> (node:internal/child_process:449:11)
+    at Socket.emit (node:events:513:28)
+    at Pipe.<anonymous> (node:net:322:12) {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: 'command -v ansible-lint',
+  stdout: '',
+  stderr: ''
+}
+Path for lint:  
+[Error - 09:37:09] An error occurred in 'onDidOpen' handler: [TypeError] Cannot read properties of undefined (reading 'has')
+TypeError: Cannot read properties of undefined (reading 'has')
+    at /home/georg/.vscode/extensions/redhat.ansible-2.10.130/out/server/src/server.js:2:23918
+    at Generator.next (<anonymous>)
+    at s (/home/georg/.vscode/extensions/redhat.ansible-2.10.130/out/server/src/server.js:2:21924)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+cmd 'ansible-lint --version' was not executed with the following error: ' Error: Command failed: ansible-lint --version
+/bin/sh: 1: ansible-lint: not found
+
+Error: Command failed: command -v ansible-lint
+
+    at ChildProcess.exithandler (node:child_process:431:12)
+    at ChildProcess.emit (node:events:513:28)
+    at maybeClose (node:internal/child_process:1091:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:302:5) {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: 'command -v ansible-lint',
+  stdout: '',
+  stderr: ''
+}
+Path for lint:  
+[Error - 09:37:40] An error occurred in 'onDidSave' handler: [TypeError] Cannot read properties of undefined (reading 'has')
+TypeError: Cannot read properties of undefined (reading 'has')
+    at /home/georg/.vscode/extensions/redhat.ansible-2.10.130/out/server/src/server.js:2:23918
+    at Generator.next (<anonymous>)
+    at s (/home/georg/.vscode/extensions/redhat.ansible-2.10.130/out/server/src/server.js:2:21924)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
