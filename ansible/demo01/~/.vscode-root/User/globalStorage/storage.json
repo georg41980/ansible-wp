@@ -30,8 +30,8 @@
             "backupPath": "/home/georg/ansible-wp/ansible/demo01/~/.vscode-root/Backups/cb395af248d05e4c431456088a6ec4bc",
             "uiState": {
                 "mode": 1,
-                "x": 923,
-                "y": 107,
+                "x": 593,
+                "y": 69,
                 "width": 1005,
                 "height": 767
             }
@@ -818,8 +818,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap",
-                        "enabled": false
+                        "label": "&&Word Wrap"
                     }
                 ]
             },
