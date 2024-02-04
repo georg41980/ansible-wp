@@ -18,3 +18,5 @@
 2024-02-04 08:55:08.177 [error] electron #230: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NAME_NOT_RESOLVED
 2024-02-04 08:56:13.496 [error] electron #231: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NAME_NOT_RESOLVED
 2024-02-04 08:56:16.578 [error] electron #232: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NAME_NOT_RESOLVED
+2024-02-04 08:57:30.871 [error] electron #233: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NAME_NOT_RESOLVED
+2024-02-04 08:57:33.763 [error] electron #234: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_NAME_NOT_RESOLVED
