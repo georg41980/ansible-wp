@@ -5,8 +5,8 @@
     - name: "SSH-Port ändern"
       lineinfile:
         dest: "/etc/ssh/sshd_config"
-        regexp: "Port 22"
-        line: "Port 15684"
+        regexp: "Port 15684"
+        line: "Port 22"
 
     - name: "SSHD neu starten"
       service:
