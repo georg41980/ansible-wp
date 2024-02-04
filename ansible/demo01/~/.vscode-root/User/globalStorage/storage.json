@@ -95,8 +95,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Geschlossenen Editor erneut öffnen",
-                                    "enabled": false
+                                    "label": "&&Geschlossenen Editor erneut öffnen"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -812,8 +811,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Zeilenumbruch",
-                        "enabled": false
+                        "label": "&&Zeilenumbruch"
                     }
                 ]
             },
@@ -821,8 +819,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Zurück",
-                        "enabled": false
+                        "label": "&&Zurück"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -831,8 +828,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Position der letzten Bearbeitung",
-                        "enabled": false
+                        "label": "&&Position der letzten Bearbeitung"
                     },
                     {
                         "id": "vscode.menubar.separator"

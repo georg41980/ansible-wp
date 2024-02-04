@@ -1,0 +1,114 @@
+test
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/1a22c44173fb7c96_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/1fa6d6ab18bdcfb3_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/21ca5dc34c174ec0_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/302f3844fa668330_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/31520e3b3161feb2_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/333a127af4ff82b0_0
+#	modified:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/3670b836ab296772_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/4b95856d0eb7264c_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/5538e0f3161260ce_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/5c871ce0447c74b0_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/5eaea05f9062a98b_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/75798545831c1eee_0
+#	modified:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/a97c96d98c7c4739_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/be669aeef159db33_0
+#	modified:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/d121e2a6335b7510_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/dd0aac719b7e842b_0
+#	new file:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/dd3d6697c44ea32b_0
+#	modified:   ansible/demo01/~/.vscode-root/Cache/Cache_Data/index-dir/the-real-index
+#	new file:   ansible/demo01/~/.vscode-root/CachedData/8b3775030ed1a69b13e4f4c628c612102e30a681/addon-serialize-46491e356aebdfb9ff5da182d7833502.code
+#	modified:   ansible/demo01/~/.vscode-root/CachedData/8b3775030ed1a69b13e4f4c628c612102e30a681/chrome/js/index-dir/the-real-index
+#	new file:   ansible/demo01/~/.vscode-root/CachedData/8b3775030ed1a69b13e4f4c628c612102e30a681/extension-0b446450fe70e30dfc51a1a6932851e1.code
+#	modified:   ansible/demo01/~/.vscode-root/CachedProfilesData/__default__profile__/extensions.builtin.cache
+#	modified:   ansible/demo01/~/.vscode-root/CachedProfilesData/__default__profile__/extensions.user.cache
+#	modified:   ansible/demo01/~/.vscode-root/DawnCache/data_1
+#	modified:   ansible/demo01/~/.vscode-root/DawnCache/index
+#	modified:   ansible/demo01/~/.vscode-root/GPUCache/data_0
+#	modified:   ansible/demo01/~/.vscode-root/GPUCache/data_1
+#	modified:   ansible/demo01/~/.vscode-root/GPUCache/data_2
+#	modified:   ansible/demo01/~/.vscode-root/GPUCache/index
+#	modified:   ansible/demo01/~/.vscode-root/Local Storage/leveldb/LOG
+#	new file:   ansible/demo01/~/.vscode-root/Local Storage/leveldb/LOG.old
+#	modified:   ansible/demo01/~/.vscode-root/Network Persistent State
+#	modified:   ansible/demo01/~/.vscode-root/Service Worker/Database/LOG
+#	new file:   ansible/demo01/~/.vscode-root/Service Worker/Database/LOG.old
+#	new file:   ansible/demo01/~/.vscode-root/Session Storage/000003.log
+#	new file:   ansible/demo01/~/.vscode-root/Session Storage/CURRENT
+#	new file:   ansible/demo01/~/.vscode-root/Session Storage/LOCK
+#	new file:   ansible/demo01/~/.vscode-root/Session Storage/LOG
+#	new file:   ansible/demo01/~/.vscode-root/Session Storage/MANIFEST-000001
+#	modified:   ansible/demo01/~/.vscode-root/TransportSecurity
+#	new file:   ansible/demo01/~/.vscode-root/User/History/-22efc308/DP7e
+#	new file:   ansible/demo01/~/.vscode-root/User/History/-22efc308/entries.json
+#	modified:   ansible/demo01/~/.vscode-root/User/History/-39c374f2/entries.json
+#	modified:   ansible/demo01/~/.vscode-root/User/globalStorage/state.vscdb
+#	new file:   ansible/demo01/~/.vscode-root/User/globalStorage/state.vscdb.backup
+#	modified:   ansible/demo01/~/.vscode-root/User/globalStorage/storage.json
+#	deleted:    ansible/demo01/~/.vscode-root/User/workspaceStorage/1706978792941/state.vscdb
+#	modified:   ansible/demo01/~/.vscode-root/User/workspaceStorage/def77d5efa0eaf92df08b5f1d79fca17/state.vscdb
+#	new file:   ansible/demo01/~/.vscode-root/User/workspaceStorage/def77d5efa0eaf92df08b5f1d79fca17/state.vscdb.backup
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!base!common!worker!simpleWorker.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!code!electron-main!main.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!code!electron-sandbox!issue!issueReporterMain.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!code!electron-sandbox!processExplorer!processExplorerMain.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!code!node!cli.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!code!node!cliProcessMain.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!code!node!sharedProcess!sharedProcessMain.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!editor!common!services!editorSimpleWorker.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!platform!files!node!watcher!watcherMain.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!platform!terminal!node!ptyHostMain.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!workbench!api!node!extensionHostProcess.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!workbench!api!worker!extensionHostWorker.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!workbench!contrib!debug!node!telemetryApp.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!workbench!contrib!notebook!common!services!notebookSimpleWorker.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/8b3775030ed1a69b13e4f4c628c612102e30a681/vs!workbench!workbench.desktop.main.nls.json
+#	new file:   ansible/demo01/~/.vscode-root/clp/c4b9648eefcf84f7681188b584446ef7.de/tcf.json
+#	modified:   ansible/demo01/~/.vscode-root/code.lock
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240203T174632/main.log
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240203T174632/window1/exthost/exthost.log
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240203T174632/window1/exthost/output_logging_20240203T174911/3-Ansible Support.log
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240203T174632/window1/exthost/vscode.git/Git.log
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240203T174632/window1/exthost/vscode.github-authentication/GitHub Authentication.log
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240203T174632/window1/views.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/editSessions.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/main.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/network.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/ptyhost.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/remoteTunnelService.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/sharedprocess.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/telemetry.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/terminal.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/userDataSync.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/extensionTelemetry.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/exthost.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/ms-python.python/Python-Sprachserver.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/ms-python.python/Python.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/output_logging_20240204T090709/1-YAML Support.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/output_logging_20240204T090709/2-Python-Testprotokoll.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/output_logging_20240204T090709/3-Ansible Support.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/output_logging_20240204T090709/4-JSON-Sprachserver.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/output_logging_20240204T091808/1-YAML Support.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/output_logging_20240204T091808/2-Python-Testprotokoll.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/output_logging_20240204T091808/3-Ansible Support.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/vscode.git/Git.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/vscode.github-authentication/GitHub Authentication.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/vscode.github/GitHub.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/vscode.microsoft-authentication/Microsoft Authentication.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/network.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/notebook.rendering.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/output_20240204T090709/tasks.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/output_20240204T091809/tasks.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/renderer.log
+#	new file:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/views.log
+#
+# Changes not staged for commit:
+#	modified:   ansible/demo01/~/.vscode-root/logs/20240204T090705/window1/exthost/vscode.git/Git.log
+#
